@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">library</string>
+
+    <string name="field_is_required">Field is required</string>
+    <string name="field_should_be_longer">Field should be longer</string>
+    <string name="field_should_be_smaller">Field should be smaller</string>
+    <string name="field_is_invalid">Field is invalid</string>
+    <string name="field_must_contains_digits">Field must contains digits</string>
+    <string name="field_must_contains_lowercase">Field must contains lowercase characters</string>
+    <string name="field_must_contains_uppercase">Field must contains uppercase characters</string>
+    <string name="field_must_contains_symbols">Field must contains special symbols</string>
+
+    <string name="email_is_required">Email is required</string>
+    <string name="email_is_invalid">Email is invalid</string>
+
+    <string name="password_is_required">Password is required</string>
+    <string name="password_should_be_longer">Password should be longer</string>
+    <string name="password_should_be_smaller">Password should be smaller</string>
+    <string name="password_must_contains_lowercase">Password must contains lowercase characters</string>
+    <string name="password_must_contains_uppercase">Password must contains uppercase characters</string>
+    <string name="password_must_contains_digits">Password must contains digits</string>
+    <string name="password_must_contains_symbols">Password must contains special symbols</string>
+    <string name="password_is_invalid">Password is invalid</string>
+
+
+
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valid_emails">
+        <item>email@domain.com</item>
+        <item>firstname.lastname@domain.com</item>
+        <item>email@subdomain.domain.com</item>
+        <item>firstname+lastname@domain.com</item>
+        <item>email@123.123.123.123</item>
+        <item>"email"@domain.com</item>
+        <item>1234567890@domain.com</item>
+        <item>_______@domain.com</item>
+        <item>email@domain-one.com</item>
+        <item>email@domain.name</item>
+        <item>email@domain.co.jp</item>
+        <item>firstname-lastname@domain.com</item>
+        <item>.email@domain.com</item>
+        <item>email.@domain.com </item>
+        <item>email..email@domain.com</item>
+        <item>email@domain.web</item>
+        <item>email@111.222.333.44444</item>
+    </string-array>
+
+    <string-array name="invalid_emails">
+        <item>email@[123.123.123.123]</item>
+        <item>plainaddress</item>
+        <item>#@%^%#$@#$@#.com</item>
+        <item>\u0040domain.com</item>
+        <item>Joe Smith\u003Cemail@domain.com\u003E</item>
+        <item>email.domain.com</item>
+        <item>email@domain@domain.com</item>
+        <item>あいうえお@domain.com</item>
+        <item>email@domain.com (Joe Smith)</item>
+        <item>email@domain</item>
+        <item>email@-domain.com</item>
+        <item>email@domain..com</item>
+    </string-array>
+
+    <string name="tests_some_text">Some text</string>
+    <string name="tests_second_some_text">Second some text</string>
+    <string name="tests_some_long_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.
+    </string>
+
+    <string name="tests_some_error">Some error</string>
+    <string name="tests_some_error_second">Some error second</string>
+
+    <string name="tests_lower">lowecase</string>
+    <string name="tests_upper">UPPERCASE</string>
+    <string name="tests_digits">12345678</string>
+    <string name="tests_symbols">\u0020\u0021\u0022\u0023\u0024\u0025\u0026\u0027\u0028\u0029\u002A\u002B\u002C\u002D\u002E\u002F\u003A\u003B\u003C\u003D\u003E\u003F\u0040\u005B\u005C\u005D\u005E\u005F\u0060\u007B\u007C\u007D\u007E</string>
+
+    <string name="tests_valid_email">qwerty@gmail.com</string>
+    <string name="tests_password_full">PASSword2019\u0021</string>
+
+</resources>
