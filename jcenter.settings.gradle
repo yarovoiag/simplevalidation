@@ -1,0 +1,15 @@
+ext {
+    libraryVersionCode = 3
+    libraryVersion = '1.0.2'
+
+    developerId = 'yarovoiag'
+    developerName = 'Alex Yarovoi'
+    developerEmail = 'yarovoiag@gmail.com'
+
+    siteUrl = 'https://github.com/yarovoiag/simplevalidation'
+    gitUrl = 'https://github.com/yarovoiag/simplevalidation.git'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}

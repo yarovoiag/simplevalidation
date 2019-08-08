@@ -1,16 +1,22 @@
 <resources>
     <string name="app_name">SimpleValidation</string>
 
-    <string name="digits_error">Text must contains digits</string>
-    <string name="email_error">Invalid email</string>
-    <string name="empty_error">Required field</string>
-    <string name="text_too_short_error">Text too short</string>
-    <string name="text_too_long_error">Text too long</string>
+    <string name="required_field_error">Required field</string>
 
-    <string name="password_too_short_error">Password should be longer</string>
-    <string name="password_too_long_error">Password should be smaller</string>
-    <string name="password_lowercase_error">Password must contains lowercase characters</string>
-    <string name="password_uppercase_error">Password must contains uppercase characters</string>
+    <string name="email_error">Invalid email</string>
+
+    <string name="min_length_error">Field is too small</string>
+    <string name="max_length_error">Field is too big</string>
+
+    <string name="min_length_password_error">Password is too small</string>
+    <string name="max_length_password_error">Password is too big</string>
+
+    <string name="lower_password_error">Password should contains lower case</string>
+    <string name="upper_password_error">Password should contains upper case</string>
+    <string name="digits_password_error">Password should contains digits</string>
+    <string name="symbols_password_error">Password should contains symbols</string>
+
+
     <string name="hint_nickname">Nickname</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>

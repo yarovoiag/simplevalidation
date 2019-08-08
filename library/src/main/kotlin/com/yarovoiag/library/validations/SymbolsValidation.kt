@@ -39,7 +39,6 @@ class SymbolsValidation(private val error: String) : Validation {
         fun error(message: String?) = apply { error = message.orEmpty() }
         fun error(@StringRes id: Int) = apply { error = getString(id) }
 
-
         fun build() = SymbolsValidation(error)
     }
 }

@@ -1,0 +1,12 @@
+apply from: '../jcenter.settings.gradle'
+ext {
+    bintrayRepo = 'SimpleValidation'
+    bintrayName = 'SimpleValidation'
+
+    publishedGroupId = 'com.yarovoiag'
+    libraryName = 'SimpleValidation'
+    artifact = 'simple-validation'
+
+    libraryDescription = 'Validation library for android'
+
+}

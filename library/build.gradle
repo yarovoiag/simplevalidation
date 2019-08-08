@@ -1,15 +1,17 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply from: 'lib_jcenter.settings.gradle'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.compileSdkVersion as Integer
+    buildToolsVersion rootProject.ext.buildToolsVersion as String
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0.0"
+        targetSdkVersion rootProject.ext.compileSdkVersion as Integer
+        versionCode libraryVersionCode
+        versionName libraryVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -22,6 +24,19 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/kotlin']
+        }
+    }
+
+    sourceSets["main"].java.srcDir("src/main/kotlin")
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
 dependencies {
@@ -30,6 +45,8 @@ dependencies {
     // kotlin
     implementation kotlinDependencies.jdk
     implementation kotlinDependencies.ktx
+
+    implementation supportDependencies.design
 
     // tests
     implementation testsDependencies.junit
@@ -40,3 +57,10 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+//Add these lines to publish library to bintray
+//Place it at the end of the file
+apply from: '../installv1.gradle'
+//https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
+apply from: '../bintrayv1.gradle'
+// https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle
