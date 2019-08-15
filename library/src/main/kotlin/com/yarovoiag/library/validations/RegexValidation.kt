@@ -37,7 +37,7 @@ class RegexValidation(private val regex: Regex,
     class Builder(context: Context) : BaseBuilder(context) {
 
         private var regex = ANY_REGEX
-        private var error = getString(R.string.field_is_invalid)
+        private var error = getString(R.string.default_error)
 
         fun regex(regex: String) = apply { this.regex = regex.toRegex() }
         fun regex(regex: Regex) = apply { this.regex = regex }

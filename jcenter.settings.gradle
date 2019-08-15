@@ -1,6 +1,6 @@
 ext {
-    libraryVersionCode = 3
-    libraryVersion = '1.0.2'
+    libraryVersionCode = 5
+    libraryVersion = '1.0.5'
 
     developerId = 'yarovoiag'
     developerName = 'Alex Yarovoi'

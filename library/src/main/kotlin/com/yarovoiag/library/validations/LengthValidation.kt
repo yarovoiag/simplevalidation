@@ -44,8 +44,8 @@ class LengthValidation(private val minLength: Int,
         private var minLength = getInteger(R.integer.min_field_length)
         private var maxLength = getInteger(R.integer.max_field_length)
 
-        private var minLengthError = getString(R.string.field_should_be_longer)
-        private var maxLengthError = getString(R.string.field_should_be_smaller)
+        private var minLengthError = getString(R.string.default_error)
+        private var maxLengthError = getString(R.string.default_error)
 
         fun minLength(length: Int) = apply { minLength = length }
         fun maxLength(length: Int) = apply { maxLength = length }

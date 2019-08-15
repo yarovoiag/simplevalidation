@@ -34,7 +34,7 @@ class UpperCaseValidation(private val error: String) : Validation {
 
     class Builder(context: Context) : BaseBuilder(context) {
 
-        private var error = getString(R.string.field_must_contains_uppercase)
+        private var error = getString(R.string.default_error)
 
         fun error(message: String?) = apply { error = message.orEmpty() }
         fun error(@StringRes id: Int) = apply { error = getString(id) }
